@@ -1,496 +1,166 @@
 {
   "players": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e1"},
+      "id": 1,
       "username": "DragonSlayer99",
-      "email": "dragonslayer@example.com",
       "level": 45,
-      "experience": 125000,
       "gold": 15420,
-      "characterId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f1"},
-      "guildId": {"$oid": "65a1b2c3d4e5f6a7b8c9d111"},
-      "createdAt": {"$date": "2024-01-15T08:30:00.000Z"},
-      "lastLogin": {"$date": "2026-02-10T14:25:00.000Z"}
+      "characterId": 1
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e2"},
+      "id": 2,
       "username": "MysticMage",
-      "email": "mysticmage@example.com",
       "level": 38,
-      "experience": 89500,
       "gold": 9800,
-      "characterId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f2"},
-      "guildId": {"$oid": "65a1b2c3d4e5f6a7b8c9d111"},
-      "createdAt": {"$date": "2024-03-22T12:15:00.000Z"},
-      "lastLogin": {"$date": "2026-02-09T19:45:00.000Z"}
+      "characterId": 2
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e3"},
+      "id": 3,
       "username": "ShadowRogue",
-      "email": "shadowrogue@example.com",
       "level": 42,
-      "experience": 105000,
       "gold": 22100,
-      "characterId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f3"},
-      "guildId": {"$oid": "65a1b2c3d4e5f6a7b8c9d112"},
-      "createdAt": {"$date": "2024-02-10T09:00:00.000Z"},
-      "lastLogin": {"$date": "2026-02-10T10:30:00.000Z"}
+      "characterId": 3
     }
   ],
   "characters": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f1"},
-      "name": "Thorin Ironforge",
+      "id": 1,
+      "name": "Thorin",
       "class": "Warrior",
       "race": "Dwarf",
-      "stats": {
-        "health": 2500,
-        "maxHealth": 2500,
-        "mana": 300,
-        "maxMana": 300,
-        "strength": 85,
-        "agility": 45,
-        "intelligence": 30,
-        "vitality": 90
-      },
-      "currentLocationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d101"}
+      "health": 2500,
+      "mana": 300,
+      "strength": 85,
+      "agility": 45
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f2"},
-      "name": "Elara Moonwhisper",
+      "id": 2,
+      "name": "Elara",
       "class": "Mage",
       "race": "Elf",
-      "stats": {
-        "health": 1200,
-        "maxHealth": 1200,
-        "mana": 2800,
-        "maxMana": 2800,
-        "strength": 25,
-        "agility": 55,
-        "intelligence": 95,
-        "vitality": 40
-      },
-      "currentLocationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d101"}
+      "health": 1200,
+      "mana": 2800,
+      "strength": 25,
+      "agility": 55
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d0f3"},
-      "name": "Kael Shadowstep",
+      "id": 3,
+      "name": "Kael",
       "class": "Rogue",
       "race": "Human",
-      "stats": {
-        "health": 1800,
-        "maxHealth": 1800,
-        "mana": 800,
-        "maxMana": 800,
-        "strength": 60,
-        "agility": 92,
-        "intelligence": 50,
-        "vitality": 55
-      },
-      "currentLocationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d102"}
-    }
-  ],
-  "locations": [
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d101"},
-      "name": "Silverkeep City",
-      "type": "City",
-      "description": "A bustling medieval city with stone walls and a grand castle",
-      "region": "Central Kingdom",
-      "dangerLevel": 1,
-      "coordinates": {
-        "x": 100,
-        "y": 100
-      }
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d102"},
-      "name": "Whispering Woods",
-      "type": "Forest",
-      "description": "Ancient forest where trees whisper secrets",
-      "region": "Northern Wilderness",
-      "dangerLevel": 3,
-      "coordinates": {
-        "x": 120,
-        "y": 200
-      }
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d103"},
-      "name": "Ironpeak Mines",
-      "type": "Dungeon",
-      "description": "Deep underground mines overrun by monsters",
-      "region": "Eastern Mountains",
-      "dangerLevel": 5,
-      "coordinates": {
-        "x": 250,
-        "y": 150
-      }
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d104"},
-      "name": "Dragon's Lair",
-      "type": "Boss Area",
-      "description": "Massive cavern where ancient dragon slumbers",
-      "region": "Eastern Mountains",
-      "dangerLevel": 10,
-      "coordinates": {
-        "x": 300,
-        "y": 180
-      }
+      "health": 1800,
+      "mana": 800,
+      "strength": 60,
+      "agility": 92
     }
   ],
   "quests": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d201"},
+      "id": 1,
       "title": "Rat Infestation",
-      "description": "Clear giant rats from city sewers",
       "level": 5,
-      "type": "Elimination",
-      "objectives": [
-        {
-          "description": "Kill 10 Giant Rats",
-          "target": 10,
-          "current": 0
-        }
-      ],
-      "rewards": {
-        "gold": 250,
-        "experience": 500,
-        "items": []
-      },
-      "status": "Available",
-      "questGiverId": {"$oid": "65a1b2c3d4e5f6a7b8c9d301"}
+      "reward": 250,
+      "status": "available"
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d202"},
+      "id": 2,
       "title": "Bandit Trouble",
-      "description": "Deal with bandits on the northern road",
       "level": 15,
-      "type": "Elimination",
-      "objectives": [
-        {
-          "description": "Defeat Bandit Leader",
-          "target": 1,
-          "current": 0
-        },
-        {
-          "description": "Defeat Bandits",
-          "target": 5,
-          "current": 0
-        }
-      ],
-      "rewards": {
-        "gold": 800,
-        "experience": 2000,
-        "items": []
-      },
-      "status": "Available",
-      "questGiverId": {"$oid": "65a1b2c3d4e5f6a7b8c9d301"}
+      "reward": 800,
+      "status": "available"
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d203"},
-      "title": "Reclaim the Mines",
-      "description": "Clear goblins from Ironpeak Mines",
-      "level": 30,
-      "type": "Dungeon",
-      "objectives": [
-        {
-          "description": "Clear Mine Entrance",
-          "target": 1,
-          "current": 0
-        },
-        {
-          "description": "Defeat Goblin King",
-          "target": 1,
-          "current": 0
-        }
-      ],
-      "rewards": {
-        "gold": 2500,
-        "experience": 8000,
-        "items": []
-      },
-      "status": "Available",
-      "questGiverId": {"$oid": "65a1b2c3d4e5f6a7b8c9d302"}
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d204"},
-      "title": "Slay the Dragon",
-      "description": "Defeat the ancient dragon Pyraxis",
+      "id": 3,
+      "title": "Dragon Slayer",
       "level": 50,
-      "type": "Boss",
-      "objectives": [
-        {
-          "description": "Defeat Pyraxis the Ancient",
-          "target": 1,
-          "current": 0
-        }
-      ],
-      "rewards": {
-        "gold": 10000,
-        "experience": 50000,
-        "items": [{"$oid": "65a1b2c3d4e5f6a7b8c9d403"}]
-      },
-      "status": "Available",
-      "questGiverId": {"$oid": "65a1b2c3d4e5f6a7b8c9d303"}
+      "reward": 10000,
+      "status": "locked"
     }
   ],
   "items": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d401"},
+      "id": 1,
       "name": "Iron Sword",
-      "type": "Weapon",
-      "subtype": "Sword",
-      "rarity": "Common",
-      "level": 1,
-      "stats": {
-        "damage": 15,
-        "durability": 100,
-        "strength": 2
-      },
-      "value": 50,
-      "weight": 3.5
+      "type": "weapon",
+      "rarity": "common",
+      "damage": 15,
+      "value": 50
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d402"},
-      "name": "Steel Longsword",
-      "type": "Weapon",
-      "subtype": "Sword",
-      "rarity": "Uncommon",
-      "level": 15,
-      "stats": {
-        "damage": 42,
-        "durability": 150,
-        "strength": 8,
-        "criticalChance": 5
-      },
-      "value": 350,
-      "weight": 4.2
+      "id": 2,
+      "name": "Steel Sword",
+      "type": "weapon",
+      "rarity": "rare",
+      "damage": 42,
+      "value": 350
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d403"},
-      "name": "Dragonforged Greatsword",
-      "type": "Weapon",
-      "subtype": "Greatsword",
-      "rarity": "Legendary",
-      "level": 50,
-      "stats": {
-        "damage": 180,
-        "durability": 300,
-        "strength": 35,
-        "criticalDamage": 50,
-        "fireDamage": 25
-      },
-      "value": 15000,
-      "weight": 8.5
+      "id": 3,
+      "name": "Dragon Sword",
+      "type": "weapon",
+      "rarity": "legendary",
+      "damage": 180,
+      "value": 15000
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d404"},
+      "id": 4,
       "name": "Leather Armor",
-      "type": "Armor",
-      "subtype": "Light Armor",
-      "rarity": "Common",
-      "level": 1,
-      "stats": {
-        "defense": 10,
-        "durability": 100,
-        "vitality": 3
-      },
-      "value": 40,
-      "weight": 5.0
+      "type": "armor",
+      "rarity": "common",
+      "defense": 10,
+      "value": 40
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d405"},
-      "name": "Mage Robe",
-      "type": "Armor",
-      "subtype": "Robe",
-      "rarity": "Rare",
-      "level": 25,
-      "stats": {
-        "defense": 30,
-        "durability": 120,
-        "intelligence": 18,
-        "mana": 150,
-        "spellPower": 10
-      },
-      "value": 1800,
-      "weight": 2.0
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d406"},
+      "id": 5,
       "name": "Health Potion",
-      "type": "Consumable",
-      "subtype": "Potion",
-      "rarity": "Common",
-      "level": 1,
-      "effect": {
-        "type": "heal",
-        "amount": 100
-      },
-      "value": 25,
-      "weight": 0.5,
-      "stackable": true
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d407"},
-      "name": "Mana Potion",
-      "type": "Consumable",
-      "subtype": "Potion",
-      "rarity": "Common",
-      "level": 1,
-      "effect": {
-        "type": "mana",
-        "amount": 80
-      },
-      "value": 30,
-      "weight": 0.5,
-      "stackable": true
+      "type": "consumable",
+      "rarity": "common",
+      "heal": 100,
+      "value": 25
     }
   ],
   "inventory": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d501"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e1"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d403"},
+      "id": 1,
+      "playerId": 1,
+      "itemId": 3,
       "quantity": 1,
-      "equipped": true,
-      "slot": "mainHand"
+      "equipped": true
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d502"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e1"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d406"},
+      "id": 2,
+      "playerId": 1,
+      "itemId": 5,
       "quantity": 12,
-      "equipped": false,
-      "slot": null
+      "equipped": false
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d503"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e2"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d405"},
+      "id": 3,
+      "playerId": 2,
+      "itemId": 2,
       "quantity": 1,
-      "equipped": true,
-      "slot": "chest"
+      "equipped": true
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d504"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e2"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d407"},
-      "quantity": 15,
-      "equipped": false,
-      "slot": null
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d505"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e3"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d402"},
+      "id": 4,
+      "playerId": 3,
+      "itemId": 2,
       "quantity": 1,
-      "equipped": true,
-      "slot": "mainHand"
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d506"},
-      "playerId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e3"},
-      "itemId": {"$oid": "65a1b2c3d4e5f6a7b8c9d406"},
-      "quantity": 8,
-      "equipped": false,
-      "slot": null
+      "equipped": true
     }
   ],
   "guilds": [
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d111"},
-      "name": "Knights of the Silver Dawn",
-      "tag": "KSD",
-      "level": 12,
-      "memberCount": 45,
-      "maxMembers": 50,
-      "treasury": 125000,
-      "leaderId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e1"},
-      "officers": [
-        {"$oid": "65a1b2c3d4e5f6a7b8c9d0e2"}
-      ],
-      "createdAt": {"$date": "2024-01-20T10:00:00.000Z"}
+      "id": 1,
+      "name": "Knights of Silver",
+      "members": 45,
+      "level": 12
     },
     {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d112"},
+      "id": 2,
       "name": "Shadow Syndicate",
-      "tag": "SS",
-      "level": 10,
-      "memberCount": 32,
-      "maxMembers": 40,
-      "treasury": 98000,
-      "leaderId": {"$oid": "65a1b2c3d4e5f6a7b8c9d0e3"},
-      "officers": [],
-      "createdAt": {"$date": "2024-02-14T14:30:00.000Z"}
-    }
-  ],
-  "npcs": [
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d301"},
-      "name": "Captain Marcus",
-      "role": "Quest Giver",
-      "locationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d101"},
-      "dialogue": "Greetings, adventurer! The city needs brave souls like you.",
-      "faction": "City Guard",
-      "isHostile": false
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d302"},
-      "name": "Dwarven Foreman",
-      "role": "Quest Giver",
-      "locationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d103"},
-      "dialogue": "The mines were our pride, now they're crawling with beasts!",
-      "faction": "Mining Company",
-      "isHostile": false
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d303"},
-      "name": "Pyraxis the Ancient",
-      "role": "Boss",
-      "locationId": {"$oid": "65a1b2c3d4e5f6a7b8c9d104"},
-      "dialogue": "You dare enter my domain, mortal?",
-      "faction": "Dragons",
-      "isHostile": true
-    }
-  ],
-  "achievements": [
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d601"},
-      "name": "First Blood",
-      "description": "Defeat your first enemy",
-      "category": "Combat",
-      "points": 10,
-      "rewards": {
-        "gold": 100,
-        "experience": 50
-      },
-      "isSecret": false
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d602"},
-      "name": "Dragon Slayer",
-      "description": "Defeat the ancient dragon",
-      "category": "Boss",
-      "points": 100,
-      "rewards": {
-        "gold": 5000,
-        "experience": 10000
-      },
-      "isSecret": false
-    },
-    {
-      "_id": {"$oid": "65a1b2c3d4e5f6a7b8c9d603"},
-      "name": "Treasure Hunter",
-      "description": "Collect 10000 gold",
-      "category": "Wealth",
-      "points": 50,
-      "rewards": {
-        "gold": 1000,
-        "experience": 500
-      },
-      "isSecret": false
+      "members": 32,
+      "level": 10
     }
   ]
 }
